@@ -26,12 +26,18 @@ assert hrs_to_mins("1 hrs") == 60
 assert hrs_to_mins("1 hrs 5 mins") == 65
 
 
+def only_unique():
+    '''Данная функция удаляет дубрилурующиеся данные'''
+    df = pd.read_csv('recipes_100.csv')
+    df = df.iloc[0:31]
+    return df
+
+
 def find_ingredient(ings: str) -> Dict:
     '''Данная функция принимает строку с названием ингредиента и ищет совпадения
     в базе рецептов в колонке "ingredients" и возвращает словарь для записи в json файл'''
-    df = pd.read_csv('recipes_100.csv')
-    df = df.iloc[0:31]  # Оставил только уникальные строки
-    recipes = df[df["ingredients"].str.contains(f"{ings}")]["recipe_name"]
+    recipes = only_unique()
+    recipes = recipes[recipes["ingredients"].str.contains(f"{ings}")]["recipe_name"]
     if len(recipes) == 0 or len(ings) == 0:
         return None
     recipes_dict : Dict = {}
@@ -44,9 +50,8 @@ assert find_ingredient("") == None
 assert find_ingredient("chicken") == {'All recipes with chicken': [['Mulligatawny Soup']]}
 
 
-df = pd.read_csv('recipes_100.csv')
-df = df.iloc[0:31] # Оставил только уникальные значения
-time_df = df[['recipe_name','total_time']]
+time_df = only_unique()
+time_df = time_df[['recipe_name','total_time']]
 pd.options.mode.chained_assignment = None
 for i in range(1, len(time_df)):
     time_df.loc[i, 'total_time'] = hrs_to_mins(time_df.loc[i, 'total_time'])
