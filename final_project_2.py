@@ -55,6 +55,5 @@ top_time_df = time_df.nlargest(3, 'total_time')
 top_time_dict : Dict = top_time_df.to_dict()
 
 with open('answers.json', 'w') as f:
-    json.dump(find_ingredient("chicken"), f, indent=2) # ,sort_keys=True
+    json.dump(find_ingredient("chicken"), f, indent=2)
     json.dump(top_time_dict, f, indent=2)
-    
