@@ -1,6 +1,7 @@
 import pandas as pd
 import json
 from typing import List, Dict
+import matplotlib.pyplot as plt
 
 
 def hrs_to_mins(time: str) -> int:
@@ -108,3 +109,11 @@ with open('answers.json', 'w') as f:
     json.dump(find_ingredient("chicken"), f, indent=2)
     json.dump(large_time(3), f, indent=2)
     json.dump(servings_or_rating("servings"), f, indent=2)
+
+hist_df = only_unique()
+hist1 = hist_df['rating']
+plt.hist(hist1, bins=32, edgecolor='black', label = 'Rating')
+plt.xlabel('Rating of recipes')
+plt.ylabel('Quantity of recipes')
+plt.legend()
+plt.savefig('hist.png')
