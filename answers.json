@@ -1,0 +1,90 @@
+{
+  "All recipes with chicken": [
+    [
+      "Mulligatawny Soup"
+    ]
+  ]
+}{
+  "recipe_name": {
+    "23": "Amazing Apple Butter",
+    "15": "Homemade Apple Cider",
+    "4": "Apple Pie Filling"
+  },
+  "total_time": {
+    "23": 640,
+    "15": 435,
+    "4": 160
+  }
+}{
+  "4 persons": [
+    [
+      "Sarah's Homemade Applesauce",
+      "Apple Hand Pies",
+      "Easy Apple Crisp with Oat Topping",
+      "Southern Fried Apples"
+    ]
+  ],
+  "6 persons": [
+    [
+      "Waldorf Salad",
+      "Easy Apple Crisp with Pie Filling",
+      "Easy Apple Cinnamon Muffins",
+      "Caramel Apples",
+      "Old-Fashioned Apple Dumplings",
+      "Apple Crisp - Perfect and Easy",
+      "Delicious Cinnamon Baked Apples",
+      "Mulligatawny Soup"
+    ]
+  ],
+  "8 persons": [
+    [
+      "Apple Crumb Pie",
+      "Easy Apple Pie",
+      "Apple-Cranberry Crostada",
+      "The Best Caramel Apples",
+      "Apple Turnovers",
+      "Apple-Cranberry Crisp",
+      "Easy Apple Cider",
+      "Apple Pie by Grandma Ople",
+      "Sauteed Apples"
+    ]
+  ],
+  "10 persons": [
+    [
+      "Awesome Sausage, Apple and Cranberry Stuffing",
+      "Debbie's Amazing Apple Bread"
+    ]
+  ],
+  "12 persons": [
+    [
+      "Apple Crisp",
+      "Apple Strudel Muffins"
+    ]
+  ],
+  "16 persons": [
+    [
+      "Homemade Apple Cider"
+    ]
+  ],
+  "24 persons": [
+    [
+      "German Apple Cake",
+      "Mom's Apple Fritters"
+    ]
+  ],
+  "40 persons": [
+    [
+      "Apple Pie Filling"
+    ]
+  ],
+  "48 persons": [
+    [
+      "Amazing Apple Butter"
+    ]
+  ],
+  "56 persons": [
+    [
+      "Canned Apple Pie Filling"
+    ]
+  ]
+}
